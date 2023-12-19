@@ -1,25 +1,3 @@
-// import { CKEditor } from '@ckeditor/ckeditor5-react';
-// import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-
-// export default function App() {
-//   return (
-//     <div className='App'>
-//       <h2>CKEditor 5 React App</h2>
-//       <CKEditor
-//         editor={ ClassicEditor }
-//         data="<p></p>"
-//         onReady={ ( editor ) => {
-//           console.log( "CKEditor5 React Component is ready to use!", editor );
-//         } }
-//         onChange={ ( event, editor ) => {
-//           const data = editor.getData();
-//           console.log( { event, editor, data } );
-//         } }
-//       />
-//     </div>
-//   );
-// }
-
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import React, { useRef } from 'react';
@@ -29,7 +7,7 @@ const App = () => {
   const editorInstanceRef = useRef(null);
 
   const uploadImageToServer = async (file) => {
-    // Implement image upload logic to the server
+    // untuk upload ke server
   };
 
   const handleImageUpload = async () => {
@@ -87,16 +65,16 @@ const App = () => {
   };
 
   const handleAddContent = () => {
-    // Implement additional content logic here
+    // taro logika disini
   };
 
   return (
     <div className='app-container'>
       <h2 className='app-title'>Daftar Kandidat</h2>
 
-      {/* Container div with box-shadow */}
+      {}
       <div className='editor-container container-with-shadow'>
-        {/* Custom-styled drag-and-drop file upload button */}
+        {}
         <div
           className='custom-upload-button'
           onClick={handleImageUpload}
@@ -112,7 +90,7 @@ const App = () => {
           </div>
         </div>
 
-        {/* Added div with box-shadow and title "Visi Misi" */}
+        {}
         <div className='ckeditor-container container-with-shadow'>
           <div className='visi-misi-container'>
             <h3 className='visi-misi-title'>Visi Misi</h3>
